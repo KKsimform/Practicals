@@ -67,9 +67,10 @@ margin-right:10px;
 
 /* main-content */
 .card{
-     width: 180px;
+     width: 160px;
      height: 250px;
      margin-bottom: 2px;
+     border:none;
 }
 .imgCard{
     margin-bottom: 2px;
