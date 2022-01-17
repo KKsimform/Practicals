@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping-cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bg-light">
+    <!-- NAVBAR --> 
+    
+   <nav class="navbar">
+     <div class="container-fluid px-3">
+       <!-- logo -->
+       <div class=" Navlogo nav-item ms-sm-5">
+          <img src="images/Flipkart.jpg" alt="">
+       </div>
+      
+         <!-- searchbox -->
+        <div class="nav-item flex-grow-1 me-sm-5 ms-2">
+       <form class="  input-group input-group-sm searchbox">
+        <input type="search" placeholder="Search for products,brands and more" class=" form-control w-80">
+        <span><i class="fa fa-search btn text-primary bg-white"></i></span>
+       </form>
+      </div>
+       <!-- login button -->
+       <div class="nav-item me-sm-2 ms-2 Login-button">
+         <input type="button" value="Login" class="btn text-primary bg-white">
+       </div>
+        <!-- more button -->
+       <div class="nav-item dropdown me-sm-2 ms-2 More">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        More
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Notification Preferences</a></li>
+          <li><a class="dropdown-item" href="#">Sell on Flipkart</a></li>
+          <li><a class="dropdown-item" href="#">24x7 Customer Care</a></li>
+          <li><a class="dropdown-item" href="#">Advertise</a></li>
+          <li><a class="dropdown-item" href="#">Download app</a></li>
+        </ul>
+       </div>
+        <!-- cart -->
+       <div class="nav-item me-sm-5  ms-2 Cart">
+         <a class="nav-link" href="#">
+           <i class=" text-white fa fa-shopping-cart"></i>
+           <span class="text-white">Cart</span>
+          </a>
+         
+       </div>
+    </span>
+
+      </div> 
+    </nav>
+
+    <!-- menubar -->
+    <div class="container-fluid bg-white d-flex flex-wrap justify-content-center" style="border-bottom: 1px solid rgba(194, 187, 187, 0.712);">
+    <div class="menu ms-2 me-sm-3 ">
+     <a  href="#">
+      <div class="menu-img my-2">
+       <img src="images/Menu/mobile1.png" >
+       </div>
+       <div class=>
+         <h5 class="text-dark text-center fs-6">Mobiles</h5>
+       </div>
+      </a>
+    </div>
+    <div class="menu ms-2 me-sm-3">
+      <a  href="#">
+       <div class="menu-img my-2">
+        <img src="images/Menu/fashion2.png" >
+        </div>
+        <div class=>
+          <h5 class="text-dark text-center fs-6">Fashion</h5>
+        </div>
+       </a>
+     </div>
+     <div class="menu ms-2 me-sm-3">
+      <a  href="#">
+       <div class="menu-img my-2">
+        <img src="images/Menu/electronics3.png" >
+        </div>
+        <div class=>
+          <h5 class="text-dark text-center fs-6">Electronics</h5>
+        </div>
+       </a>
+     </div>
+     <div class="menu ms-2 me-sm-3">
+      <a  href="#">
+       <div class="menu-img my-2">
+        <img src="images/Menu/home4.png" >
+        </div>
+        <div class=>
+          <h5 class="text-dark text-center fs-6">Home</h5>
+        </div>
+       </a>
+     </div>
+     <div class="menu ms-2 me-sm-3">
+      <a  href="#">
+       <div class="menu-img my-2">
+        <img src="images/Menu/travel5.png" >
+        </div>
+        <div class=>
+          <h5 class="text-dark text-center fs-6">Travel</h5>
+        </div>
+       </a>
+     </div>
+     <div class="menu ms-2 me-sm-3">
+      <a  href="#">
+       <div class="menu-img my-2">
+        <img src="images/Menu/Appliances6.png" >
+        </div>
+        <div class=>
+          <h5 class="text-dark text-center fs-6">Appliances</h5>
+        </div>
+       </a>
+     </div>
+     <div class="menu ms-2 me-sm-3">
+      <a  href="#">
+       <div class="menu-img my-2">
+        <img src="images/Menu/Furniture7.png" >
+        </div>
+        <div class=>
+          <h5 class="text-dark text-center fs-6">Furniture</h5>
+        </div>
+       </a>
+     </div>
+     <div class="menu ms-2 me-sm-3">
+      <a  href="#">
+       <div class="menu-img my-2">
+        <img src="images/Menu/beauty8.png" >
+        </div>
+        <div class=>
+          <h5 class="text-dark text-center fs-6">Beauty</h5>
+        </div>
+       </a>
+     </div>
+     <div class="menu ms-2 me-sm-3">
+      <a  href="#">
+       <div class="menu-img my-2">
+        <img src="images/Menu/grocery9.png" >
+        </div>
+        <div class=>
+          <h5 class="text-dark text-center fs-6">Grocery</h5>
+        </div>
+       </a>
+     </div>
+   </div>
+   <!--1st part-->
+  <div class="container d-flex flex-wrap my-4 dealCont">
+     <div class="container dealsd bg-white" >
+       <div class="d-flex mb-2 p-2" style="border-bottom: 1px solid rgba(194, 187, 187, 0.712);">
+         <!-- deals of the day heading -->
+         <div>
+           <h5 class="fw-b">Deals of the day <span>
+            <i class="fa fa-clock-o ms-2" aria-hidden="true"></i>
+            <span class="text-muted"><small>22:07:36 left</small></span></h5> 
+         </div>
+        <button type="button" class="btn btn-sm btn-primary me-1 ms-auto">view all</button>
+
+      </div>
+        <!-- content  -->
+        <div class="container" >
+          <div id="maincontent" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item  d-flex flex-wrap active">
+                    <!-- 1st card -->
+                    <div class="card  me-sm-5">
+                     <div class="imgCard">
+                       <img src="images/main-content/Office-supplies.jpeg" class="card-img-top" alt="office-supplies">
+                     </div>
+                     <div class="card-body">
+                       <div class="card-title text-center">Office Supplies</div>
+                       <p class="text-center text-success ">From ₹1019</p>
+                       <p class="text-muted text-center">Notes , pens and more!</p>
+                     </div>
+                    </div>
+                     <!-- 2nd card  -->
+                    <div class="card  me-sm-5">
+                      <div class="imgCard">
+                        <img src="images/main-content/musical.jpeg" class="card-img-top" alt="office-supplies">
+                      </div>
+                      <div class="card-body">
+                        <div class="card-title text-center">Musicles</div>
+                        <p class="text-center text-success ">Upto 50% off</p>
+                        <p class="text-muted text-center">Toy Drum,Toy Piano etc.</p>
+                      </div>
+                    </div>
+                    <!-- 3rd card  -->
+                    <div class="card  me-sm-5">
+                      <div class="imgCard"> 
+                        <img src="images/main-content/study-chair.jpeg" class="card-img-top" alt="office-supplies">
+                      </div>
+                      <div class="card-body">
+                        <div class="card-title text-center">Study Chairs</div>
+                        <p class="text-center text-success ">60% off</p>
+                        <p class="text-muted text-center">Explore more</p>
+                      </div>
+                    </div>
+                    <!-- 4th card  -->
+                    <div class="card  me-sm-5">
+                    <div class="imgCard">
+                      <img src="images/main-content/shoes.jpeg" class="card-img-top" alt="office-supplies">
+                    </div>
+                      <div class="card-body">
+                        <div class="card-title text-center">Nike, Skechers & more</div>
+                        <p class="text-center text-success ">Min. 40% off</p>
+                        <p class="text-muted text-center">Men's sport shoes..</p>
+                      </div>
+                    </div>
+                
+              </div>
+              <div class="carousel-item d-flex flex-wrap">
+                     <!-- 1st card -->
+                    <div class="card  me-sm-3">
+                      <div class="imgCard">
+                       <img src="images/main-content/home-utility.jpeg" class="card-img-top" alt="office-supplies">
+                      </div>
+                      <div class="card-body">
+                        <div class=" card-title text-center">Home Utility</div>
+                        <p class="text-center text-success ">Minimum 50% off</p>
+                        <p class="text-muted text-center">Flipkart Perfect Home</p>
+                      </div>
+                     </div>
+                      <!-- 2nd card  -->
+                     <div class="card  me-sm-3">
+                       <div class="imgCard">
+                       <img src="images/main-content/induction.jpeg" class="card-img-top" alt="office-supplies">
+                       </div>
+                       <div class="card-body">
+                         <div class="card-title text-center">Inductions</div>
+                         <p class="text-center text-success ">30% off</p>
+                         <p class="text-muted text-center">Eplore more!</p>
+                       </div>
+                     </div>
+                     <!-- 3rd card  -->
+                     <div class="card  me-sm-3">
+                       <div class="imgCard">
+                        <img src="images/main-content/microphone.jpeg" class="card-img-top" alt="office-supplies">
+                       </div>
+                       <div class="card-body">
+                         <div class="card-title text-center">Top microphones</div>
+                         <p class="text-center text-success ">Under ₹199</p>
+                         <p class="text-muted text-center">Explore more!</p>
+                       </div>
+                     </div>
+                     <!-- 4th card  -->
+                     <div class="card  me-sm-3">
+                       <div class="imgCard">
+                        <img src="images/main-content/kettles.jpeg" class="card-img-top" alt="office-supplies">
+                      </div>
+                       <div class="card-body">
+                         <div class="card-title text-center">Kettles and more</div>
+                         <p class="text-center text-success ">Starting ₹1599</p>
+                         <p class="text-muted text-center">Flipkart kitchen</p>
+                       </div>
+                     </div>
+                
+              
+             
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#maincontent" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next " type="button" data-bs-target="#maincontent" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="false"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+       </div>
+     
+     </div>
+     <!-- advertise  -->
+     <div class="me-sm-3">
+       <img src="/images/main-content/Advertise.jpeg" width="200px" height="300px">
+     </div>
+
+   </div>
+
+   <!-- 2nd part -->
+   <div class="container bg-white">
+     <div class="container d-flex">
+       <div>
+       <div class="fw-b fs-4 ms-3">Best deals on Electronics</div>
+       <p><small class="text-muted mt-0 ms-3">Shop Now!</small></p>
+      </div>
+       <button type="button" class="btn btn-sm btn-primary me-1 ms-auto my-auto">view all</button>
+
+       
+     </div>
+
+
+
+   </div>
+    
+     
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>   
+</body>
+</html>
